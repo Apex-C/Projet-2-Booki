@@ -110,7 +110,7 @@ li
 }
 .button:hover {
    color: #0065FC;
-	border: 2px #DEEBFF solid;
+	border: 2px #0065FC solid;
 }
 .button:hover:before {
   width: 100%;
