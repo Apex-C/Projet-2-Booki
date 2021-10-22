@@ -103,6 +103,12 @@
      font-size: large;
    
  }
+ .btn--input:hover
+ {
+     color: black;
+     background-color: #DEEBFF;
+     border: 1px #0065FC solid;
+ }
  label{
      padding: 15px;
      background-color: #f2f2f2;
@@ -250,6 +256,7 @@ article.hotel_selection
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
+    height: 190px;
 }
 
 .hotel_pop_items 
@@ -263,12 +270,29 @@ a.hotel_pop_items{
     z-index: 2;
     border: 2px white solid;
 }
-.hotel_pop_items span
+.info--pop h3
+{
+    margin-top: 10px;
+    margin-left: 150px;
+    text-align: center;
+}
+.info--pop p{
+    text-align: center;
+    margin-left: 150px;
+}
+.info.info--hotel h3,.info.info--hotel p {
+    margin:5px 0 5px 20px;
+}
+.info.info--activites p
+{
+    margin-left: 20px;
+}
+.info--pop.pop_description
 {
     position: absolute;
     height: 100%;
     bottom: 0;
-    left: 0;
+    right: 0;
     background-color: white;
     margin-top:10px;
     border-radius: 20px;
@@ -282,7 +306,7 @@ a.hotel_pop_items{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-a.hotel_list_items span
+.info.info--hotel
 {
     position: absolute;
     bottom: 0;
@@ -327,7 +351,7 @@ a.hotel_list_items span
     box-shadow: 0px 5px 15px 2px grey;
   
 }
-.img_long span, .img_small span
+.info.info--activites
 {
     position: absolute;
     bottom: 0;
@@ -400,7 +424,7 @@ p.text--activites{
         letter-spacing: 2px;
     }
     
-    .hotel_pop_items span,.pop_description 
+    .info--pop.pop_description
     {
         position: absolute;
         bottom: 0;
@@ -411,6 +435,10 @@ p.text--activites{
         border-radius: 0 0 15px 15px;
         background-color: white;
         z-index: 0;
+    }
+    .info--pop h3,.info--pop p{
+        text-align: center;
+        margin: 0;
     }
     .titre--pop{
         font-size: medium;
@@ -619,12 +647,12 @@ p.text--activites{
     }
     a.hotel_list_items{
         width: 100%;
+        height: auto;
     }
     .hotel_list_items img
     {
         width: inherit;
-        height: auto;
-        max-height: 300px;
+       height: 250px;
     }
     .activites_list{
         flex-direction: column;
@@ -649,6 +677,7 @@ p.text--activites{
     }
     footer.footer
     {
+        margin-top: 380px;
         flex-direction: column;
        
     }
