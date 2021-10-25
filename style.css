@@ -28,7 +28,7 @@ a{
 }
 .navigation ul li{
     margin: 0 20px 0 20px;
-    padding-top: 20px;
+    padding: 20px;
 }
 .navigation ul li:hover{
     color: #0065FC;
@@ -85,42 +85,55 @@ input.btn--recherche{
     letter-spacing: 1px;
 }
 .btn--filtre{
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
+    height: 40px;
     
 }
 .btn.btn--filtre span{
     display: inline-flex;
     align-items: center;
     border-radius: 20px;
-    border: 1px #DEEBFF solid;
+    
 }
+
 .btn.btn--filtre span i{
-    padding: 12px;
+    padding: 10px;
     background-color: #f2f2f2;
     border-radius: 20px;
+    margin-right: 15px;
 }
-input.btn.btn--filtre--items{
-    flex: 1;
-    margin-right: 5%;
-    border-radius: 20px;
+.boutton{
+    
+   
+    border-radius: 45px;
+    padding:0px 10px 0px 0px;
     text-transform: capitalize;
-    height: 40px;
+ 
     letter-spacing: 1px;
     font-weight: bold;
-    font-size: large;
-    border: none;
+    font-size: larger;
     background-color: white;
+    border: 2px #f2f2f2 solid;
+    
    
 }
 
+.boutton:hover
+{
+    color: #0065FC;
+    border: 1px #0065FC solid;
+    background-color: #f2f2f2;
+}
+
+
 
 .btn--filtre p{
-    margin-right: 30px;
-    font-size: larger;
+    margin-right: 20px;
+    font-size: x-large;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -175,6 +188,10 @@ i.fas.fa-star,i.far.fa-star,.btn.btn--filtre span i{
 }
 .pop--descrition h3{
     margin-top: 15%;
+    
+}
+.pop--descrition p,.pop--descrition h3{
+    margin-left: 10px;
 }
 .hotel--items img{
     width: 100%;
@@ -196,7 +213,7 @@ i.fas.fa-star,i.far.fa-star,.btn.btn--filtre span i{
 .hotel--pop img
 {
     width: 40%;
-    height: 150px;
+    height: 155px;
     
     border-radius: 15px 0 0 15px;
     margin: 0;
@@ -233,7 +250,7 @@ aside{
 .hotel--pop-items{
     position: relative;
     width: 95%;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     
 }
 .hotel--pop{
@@ -294,10 +311,11 @@ aside{
 }
 .footer--items{
     list-style-type: none;
+    margin-right: 40px;
     
 }
 .footer--items li{
-    margin: 10px 30px 15px 20px;
+    margin: 10px 40px 15px 20px;
 }
 .footer--items a:nth-child(1){
     font-weight: 700;
@@ -344,6 +362,15 @@ footer{
     .btn--filtre{
         width: 98%;
     }
+    .boutton{
+        margin-right: 0px;
+    }
+    .btn.btn--filtre span i {
+        margin-right: 10px;
+    }
+    .btn--filtre p{
+        margin-right: 10px;
+    }
     i.fas.fa-chart-line{
         display: none;
     }
@@ -360,6 +387,7 @@ footer{
         max-height: 130px;
         border-radius: 15px 15px 0px 0px;
     }
+   
     .pop--descrition{
         left: 0;
         bottom: -95px;
@@ -413,11 +441,22 @@ footer{
      .navigation ul{
          padding: 0;
          font-size: xx-large;
+         width: 100%;
+         justify-content: center;
 
      }
      .navigation ul li{
-         margin: 5px 20px 5px 20px;
+         
          padding-bottom: 30px;
+        
+     }
+     .nav--items{
+         width: 50%;
+         text-align: center;
+     }
+     .navigation img{
+         height: 100%;
+         text-align: center;
      }
      .navigation ul li:hover{
          border-bottom: 3px #0065FC solid;
@@ -429,17 +468,18 @@ footer{
          font-size: larger;
 
      }
-     form{
-        width: 97%;
-        margin: auto;
+
+     form,#activites,.btn.btn--filtre,#hebergement{
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
      }
      input.btn--search{
          flex: 1;
      }
      .btn.btn--filtre{
-         width: 95%;
-         margin-left: auto;
-         margin-right: auto;
+        
          flex-wrap: wrap;
          font-size: small;
      }
@@ -451,9 +491,22 @@ footer{
          width: 95%;
          
      }
-     .hotel--pop img,.hotel--items{
-         height: 250px;
-     }
+     .hotel--pop img{
+        height: 180px;
+        
+    }
+    .hotel--items img{
+        height: 255px;
+    }
+    .pop--descrition{
+        text-align: center;
+        font-size: large;
+    }
+    .pop--descrition h3{
+        margin-top: 10%;
+    }
+  
+     
      .hotel--pop-items p.star{
         position: unset;
     }
@@ -463,7 +516,7 @@ footer{
          
      }
      .activites--items,.double{
-         height: 250px;
+         height: 255px;
          width: 95%;
          margin-bottom: 15px;
          display: block;
