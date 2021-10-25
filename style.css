@@ -517,9 +517,7 @@ footer{
      aside,article.hotel{
          width: 100%;
      }
-     aside{
-        z-index: -4;
-     }
+    
      .hotel--items{
          width: 95%;
          
