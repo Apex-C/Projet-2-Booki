@@ -52,10 +52,10 @@ h1{
     margin-bottom: 5px;
 }
 .txt{
-    font-weight: 100;
-    font-size: small;
+    font-weight: 300;
+    font-size: medium;
     margin-top: 5px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 form{
     display: flex;
@@ -121,9 +121,9 @@ input.btn--recherche:hover{
     
    
     border-radius: 45px;
-    padding:0px 10px 0px 0px;
+    padding-right: 5px;
     text-transform: capitalize;
- 
+    white-space: nowrap;
     letter-spacing: 1px;
     font-weight: bold;
     font-size: larger;
@@ -153,7 +153,7 @@ input.btn--recherche:hover{
 }
 .txt--small{
     font-size: medium;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 1px;
 }
 i.fas.fa-info-circle{
@@ -192,6 +192,12 @@ i.fas.fa-star,i.far.fa-star,.btn.btn--filtre span i{
     position: relative;
     margin-bottom: 20px;
    
+}
+.hotel--items:hover,.hotel--pop-items:hover,.activites--items:hover{
+   /* border: 1px rgb(148, 148, 135) solid;*/
+    border-radius: 20px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;*/
 }
 .descrition--hotel h3,.descrition--hotel p,.pop--descrition h3,.pop--descrition p{
     margin: 2px 0px 5px 15px;
@@ -313,8 +319,8 @@ aside{
 .txt--activites{
     font-size: large;
     margin-left: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: 700;
+    
 }
 .activites--items.small{
     width: 100%;
@@ -376,7 +382,7 @@ footer{
         width: 98%;
         margin-left: auto;
         margin-right: auto;
-        font-size:small;
+        font-size:medium;
         justify-content: start;
     }
     .boutton{
