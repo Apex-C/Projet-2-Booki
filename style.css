@@ -27,7 +27,7 @@ a{
     font-size: x-large;
 }
 .navigation ul li{
-    margin: 0 20px 0 20px;
+   
     padding: 20px;
 }
 .navigation ul li:hover{
@@ -38,7 +38,14 @@ a{
 .navigation img{
     height: 80px;
 }
-/*Navigation*/
+
+.conteneur--text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
 h1{
     font-weight: 800;
     font-size: xx-large;
@@ -348,17 +355,13 @@ footer{
     .navigation ul{
         width: 30%;
     }
-    h1{
-        
-        text-align: center;
-    }
+    
     .txt{
-        text-align: center;
-        font-size: large;
-
-       
+        
+        font-size: large; 
     }
-    form{
+   
+    form, .conteneur--text{
         width: 98%;
      
         margin: auto;
@@ -455,7 +458,7 @@ footer{
      }
      .navigation ul{
          padding: 0;
-         font-size: xx-large;
+         font-size: x-large;
          width: 100%;
          justify-content: center;
 
@@ -480,15 +483,15 @@ footer{
      h1{
          text-align: center;
          margin-top:5px;
-         font-size: 40px;
+         font-size: x-large;
 
      }
      .txt{
-         font-size: x-large;
+         font-size: large;
          text-align: center;
      }
 
-     form,#activites,.btn.btn--filtre,#hebergement,p.txt,h1{
+     form,#activites,.btn.btn--filtre,#hebergement{
         width: 90%;
        
         margin-left: auto;
@@ -500,15 +503,16 @@ footer{
      .btn.btn--filtre{
         
          flex-wrap: wrap;
-         font-size: small;
+         font-size: large;
          height: auto;
          width: 68%;
          margin-left: 25px;
          justify-content: start;
+         
      }
      a.boutton{
         margin-right: 20px;
-            margin-top: 10px;
+       margin-top: 10px;
      }
      .txt--small{
          margin: 15px 0px 15px 25px;
