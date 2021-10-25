@@ -500,7 +500,7 @@ footer{
      .btn.btn--filtre{
         
          flex-wrap: wrap;
-         font-size: large;
+         font-size: small;
          height: auto;
          width: 68%;
          margin-left: 25px;
