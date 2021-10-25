@@ -372,10 +372,11 @@ footer{
         width: 98%;
         margin-left: auto;
         margin-right: auto;
-        font-size: small;
+        font-size: medium;
+        justify-content: start;
     }
     .boutton{
-        margin-right: 0px;
+        margin-right: 20px;
     }
     .btn.btn--filtre span i {
         margin-right: 10px;
