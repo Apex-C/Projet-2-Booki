@@ -7,27 +7,34 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/9eaec8351d.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo/favicon-32x32.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 </head>
-<div class="main_wrapper">
 
-    <body>
+
+<body>
+    <div class="main_wrapper">
+        <!--Partie header -->
 
         <header class="header--nav">
             <nav class="nav">
                 <a href="index.html"><img src="./images/logo/Booki.png" alt="logo" /></a>
                 <ul class="nav--list">
-                    <a class="nav--items" href="#hebergement">
-                        <li>ebergements</li>
-                    </a>
-                    <a class="nav--items" href="#hebergement">
-                        <li>activites</li>
-                    </a>
+
+                    <li><a class="nav--items" href="#hebergements">ebergements</a></li>
+
+
+                    <li> <a class="nav--items" href="#activites">activites</a></li>
+
                 </ul>
             </nav>
         </header>
+
         <main>
+            <!--Partie recherche -->
             <section class="haut">
                 <div class="conteneur--txt">
                     <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
@@ -37,6 +44,10 @@
                     <span><i class="fas fa-map-marker-alt icon_map"></i></span>
                     <input class="btn--search" type="search" value=" Marseille, France" />
                     <input class="btn--submit" type="submit" value="Recherche" />
+                    <div class="icon-mob">
+                        <i class="fas fa-search"></i>
+                        <input class="btn--submit mob" type="submit" value="" />
+                    </div>
                 </form>
                 <div class="btn--filtre">
                     <p>Filtre</p>
@@ -44,14 +55,15 @@
                             class="fas fa-money-bill-wave icon"></i><strong>Economique</strong></a>
                     <a href="index.html" class="btn"><i class="fas fa-child icon"></i><strong>Familiale</strong></a>
                     <a href="index.html" class="btn"><i class="fas fa-heart icon"></i><strong>Romantique</strong></a>
-                    <a href="index.html" class="btn"><i class="fas fa-dog icon"></i></i><strong>Animaux
+                    <a href="index.html" class="btn"><i class="fas fa-dog icon"></i><strong>Animaux
                             acceptes</strong></a>
                 </div>
                 <p class="txt"><i class="fas fa-info-circle "></i>Plus de 500 logements sont disponibles dans cette
                     ville</p>
 
             </section>
-            <section class="logements">
+            <!--Partie logement -->
+            <section class="logements" id="hebergements">
                 <article class="list--hotel">
                     <h2 class="txt--themes">Hébergement à Marseille</h2>
                     <div class="hotel--list">
@@ -64,7 +76,7 @@
                                     <p class="txt-description">Nuit a partir de 25 €</p>
                                     <p class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i>
+                                            class="fas fa-star gris"></i>
                                     </p>
 
                                 </div>
@@ -94,7 +106,7 @@
                                     <p class="txt-description">Nuit apartir de 76 €</p>
                                     <p class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i>
+                                            class="fas fa-star gris"></i>
                                     </p>
 
                                 </div>
@@ -108,8 +120,8 @@
                                     <h3 class="hotel--titre">Hotel de la mer</h3>
                                     <p class="txt-description">Nuit apartir de 46 €</p>
                                     <p class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i>
+                                            class="fas fa-star"></i><i class="fas fa-star gris"></i><i
+                                            class="fas fa-star gris"></i>
                                     </p>
 
                                 </div>
@@ -124,7 +136,7 @@
                                     <p class="txt-description">Nuit apartir de 23 €</p>
                                     <p class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i>
+                                            class="fas fa-star gris"></i>
                                     </p>
 
                                 </div>
@@ -139,7 +151,7 @@
                                     <p class="txt-description">Nuit apartir de 96 €</p>
                                     <p class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i>
+                                            class="fas fa-star "></i>
                                     </p>
                                 </div>
                             </a>
@@ -181,7 +193,7 @@
                                     <p class="txt-description">Nuit apartir de 71 €</p>
                                     <p class="star star--pop"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i>
+                                            class="fas fa-star gris"></i>
                                     </p>
 
                                 </div>
@@ -196,7 +208,7 @@
                                     <p class="txt-description">Nuit apartir de 68 €</p>
                                     <p class="star star--pop"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i>
+                                            class="fas fa-star gris"></i>
                                     </p>
 
                                 </div>
@@ -208,7 +220,8 @@
                 </article>
 
             </section>
-            <section class="activites">
+            <!--Partie activites -->
+            <section class="activites" id="activites">
                 <h2 class="txt--themes">Activités a Marseille</h2>
                 <div class="activites-list">
                     <div class="activites--items long">
@@ -223,7 +236,7 @@
                         </a>
                     </div>
                     <div class="double">
-                        <div class="activites--items small">
+                        <div class="activites--items small large">
                             <a href="index.html"><img class="image--activites"
                                     src=".//images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                                     alt="image logement" />
@@ -232,7 +245,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="activites--items small">
+                        <div class="activites--items small smaller">
                             <a href="index.html"><img class="image--activites"
                                     src=".//images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                                     alt="image logement" />
@@ -274,51 +287,50 @@
                 </div>
             </section>
         </main>
+        <!--Partie bas de page -->
         <footer>
             <div class="footer--conteneur">
                 <ul class="footer--list">
-                    <a href="index.html" class="footer--items">
-                        <li>A propos</li>
-                    </a>
-                    <a href="index.html" class="footer--items">
-                        <li>Fonctionement du site</li>
-                    </a>
-                    <a href="index.html" class="footer--items">
-                        <li>Condition general de vente</li>
-                    </a>
-                    <a href="index.html" class="footer--items">
-                        <li>Donnees et confidentialites</li>
-                    </a>
+                    <li class="footer--items"><a href="index.html">A propos</a></li>
+
+                    <li class="footer--items"> <a href="index.html">Fonctionement du site</a></li>
+
+
+                    <li class="footer--items"> <a href="index.html">Condition general de vente</a></li>
+
+
+                    <li class="footer--items"> <a href="index.html">Donnees et confidentialites</a></li>
+
 
                 </ul>
                 <ul class="footer--list">
-                    <a href="index.html" class="footer--items">
-                        <li>Nos hébergement</li>
-                    </a>
-                    <a href="index.html" class="footer--items">
-                        <li>Charte qualite</li>
-                    </a>
-                    <a href="index.html" class="footer--items">
-                        <li>Soumetre votre hotel</li>
-                    </a>
+
+                    <li class="footer--items"> <a href="index.html">Nos hébergement</a></li>
+
+
+                    <li class="footer--items"> <a href="index.html">Charte qualite</a></li>
+
+
+                    <li class="footer--items"> <a href="index.html">Soumetre votre hotel</a></li>
+
                 </ul>
                 <ul class="footer--list">
-                    <a href="index.html" class="footer--items">
-                        <li>Assistance</li>
-                    </a>
-                    <a href="index.html" class="footer--items">
-                        <li>Centre d'aide</li>
-                    </a>
-                    <a href="index.html" class="footer--items">
-                        <li>Nous contacter</li>
-                    </a>
+
+                    <li class="footer--items"> <a href="index.html">Assistance</a></li>
+
+
+                    <li class="footer--items"> <a href="index.html">Centre d'aide</a></li>
+
+
+                    <li class="footer--items"> <a href="index.html">Nous contacter</a></li>
+
                 </ul>
 
             </div>
         </footer>
+    </div>
 
-    </body>
+</body>
 
-</div>
 
 </html>
