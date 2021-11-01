@@ -424,6 +424,12 @@ a.btn{
     i.fas.fa-chart-line{
         display: none;
     }
+    .activites--items.small.smaller,.activites--items.small.smaller img{
+        height: 170px;
+    }
+    .activites--items.small.large,.activites--items.small.large img{
+        height: 170px;
+    }
     img.image--activites.long, .activites--items.long,.double{
         height: 350px;
     }
