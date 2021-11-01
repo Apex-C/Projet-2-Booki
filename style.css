@@ -312,10 +312,10 @@ img.image--activites.long,.activites--items.long {
     height: 420px;
 }
 .activites--items.small.smaller,.activites--items.small.smaller img{
-    height: 160px;
+    height: 150px;
 }
 .activites--items.small.large,.activites--items.small.large img{
-    height: 240px;
+    height: 250px;
 }
 .double{
     display: flex;
