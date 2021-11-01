@@ -27,7 +27,7 @@ nav.nav{
     list-style-type: none;
     margin-right: 20px;
     font-size: x-large;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: capitalize;
     letter-spacing: 1px;
 
@@ -85,10 +85,16 @@ i.fas.fa-map-marker-alt.icon_map{
     color: #e7e7e7;
    
 }
+.txt{
+    font-weight: 100;
+}
 input.btn--search,input.btn--submit{
     height: inherit;
     border: 1px #bdb7b7 solid;
     flex:3;
+    font-size: large;
+    font-weight: 800;
+    padding-left: 10px;
 }
 input.btn--submit{
     color: white;
@@ -222,6 +228,9 @@ img.image--hotel{
     border-radius: 0px 0px 15px 15px;
     
 }
+.txt-description{
+    font-weight: 200;
+}
 .des.description--pop h3{
     margin-top: 15%;
 }
@@ -338,7 +347,7 @@ img.image--activites.long,.activites--items.long {
 }
 .des.hotel--titre{
     margin:10px 0px 10px 20px;
-    font-weight:700;
+    font-weight:600;
     font-size: large;
 
 }
@@ -355,6 +364,7 @@ img.image--activites.long,.activites--items.long {
 }
 .footer--items {
     margin-top: 10px ;
+    font-weight: 200;
 }
 @media all and (min-width:768px) and (max-width:991px){
     .des.description,.des.description--pop{
