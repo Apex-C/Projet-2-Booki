@@ -257,7 +257,9 @@ article.pop{
 .hotel--pop:hover,.activites--items.small:hover,.activites--items.long:hover{
     box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 8px, rgba(0, 0, 0, 1) 0px 8px 8px -3px, rgba(0, 0, 0, 0.5) 8px -8px 0px inset;
 }
-
+p.txt-description span{
+    font-weight: 500;
+}
 .hotel--list{
     display: flex;
     flex-wrap: wrap;
@@ -508,6 +510,13 @@ footer{
         flex-direction: column;
         
     }
+    nav.nav img{
+        width: 125px;
+    margin-left: 90px;
+    }
+    h1{
+        font-size: 20px;
+    }
     .nav--list{
         border-bottom: 2px rgba(189, 183, 183, .4) solid;
     }
@@ -577,14 +586,14 @@ footer{
    
    
     .btn--filtre{
-        width: 85%;
+        width: 100%;
         flex-wrap: wrap;
         justify-content: flex-start;
         
     }
     a.btn{
         margin-bottom: 10px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     p.txt{
         width: 95%;
@@ -597,6 +606,13 @@ footer{
     }
     article.pop,article.list--hotel{
         width: 100%;
+       
+    }
+    article.list--hotel{
+        background: #fff;
+    }
+    .activites h2.txt--themes{
+        margin-left: 15px;
     }
     .hotel--items{
         width: 90%;
@@ -609,11 +625,9 @@ footer{
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 15px;
-    }
-    .btn--filtre p{
-        margin-left: 15px;
         
     }
+   
     .activites-list{
         flex-direction: column;
        align-items: center;
@@ -651,9 +665,7 @@ footer{
     .btn--filtre{
         width: 100%;
     }
-    .btn--filtre i{
-        padding: 12px;
-    }
+   
     input.btn--search{
         font-size: small;
     
@@ -668,12 +680,9 @@ footer{
     }
     .btn--filtre{
         width: 100%;
-        font-size: x-small;
+       
     }
-    .btn--filtre i{
-        padding: 6px;
-    
-    }
+  
     p.txt,.conteneur--txt{
         font-size: x-small;
         text-align: center;
