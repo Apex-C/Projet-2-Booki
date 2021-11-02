@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     font-family: Raleway, sans-serif;
+    --bordure: 2px #0065FC solid;
+    --bleu:#0065FC;
+    --bleu_clair:#bdb7b7;
+    --gris:#f2f2f2;
 }
 .main_wrapper{
     width: 1024px;
@@ -33,14 +37,20 @@ nav.nav{
 
     
 }
+
 .nav--list li{
     margin-left: 10px;
-    padding-top: 30px;
+    padding: 30px;
+
+    
 }
-.nav--list li:hover{
-    border-top: 2px #0065FC solid;
-   
+.nav--list li:hover,.nav--list li:active{
+    border-top: var(--bordure);
 }
+
+
+
+
 .nav--items{
     margin: 0px 15px 0px 15px;
    
@@ -71,7 +81,7 @@ form span{
     display: block;
     width: 40px;
     height: 50px;
-    background-color: #f2f2f2;
+    background-color:var(--gris);
     border-radius: 15px 0px 0px 15px;
     position: relative;
 
@@ -82,11 +92,11 @@ i.fas.fa-map-marker-alt.icon_map{
     left: 13px;
 }
 .fas.fa-star.gris{
-    color: #e7e7e7;
+    color: var(--gris);
    
 }
 .txt{
-    font-weight: 100;
+    font-weight: 200;
 }
 input.btn--search,input.btn--submit{
     height: inherit;
@@ -98,7 +108,7 @@ input.btn--search,input.btn--submit{
 }
 input.btn--submit{
     color: white;
-    background-color: #0065FC;
+    background-color: var(--bleu);
     border-radius: 0px 25px 25px 0px;
     font-weight: 600;
     font-size: medium;
@@ -108,11 +118,11 @@ input.btn--submit{
 .icon-mob{
     display: none;
     color: white;
-    background-color: #0065FC;
+    background-color: var(--bleu);
 }
 input.btn--submit:hover{
     background-color: #DEEBFF;
-    color: #0065FC;
+    color: var(--bleu);
     font-weight: 700;
 }
 .btn--filtre{
@@ -129,7 +139,7 @@ input.btn--submit:hover{
 }
 .icon{
     margin-right: 10px;
-        color: #0065FC;
+        color: var(--bleu);
         padding: 15px;
         width: 20px;
         border-radius: 25px;
@@ -164,13 +174,13 @@ input.btn--submit:hover{
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: #f2f2f2;
+    background-color: var(--gris);
     transition: all 0.3s;
     z-index: -1;
 }
 .btn:hover {
-    color: #0065FC;
-    border: 2px #0065FC solid;
+    color: var(--bleu);
+    border: var(--bordure);
  
   }
 .btn:hover:before {
@@ -181,13 +191,13 @@ section.logements{
     width: 100%;
 }
 article.list--hotel{
-    background-color: #f2f2f2;
+    background-color: var(--gris);
     width: 70%;
     border-radius: 30px;
     margin-right: 10px;
 }
 article.pop{
-    background-color: #f2f2f2;
+    background-color: var(--gris);
     width: 30%;
     border-radius: 30px;
     margin-left: 10px;
@@ -253,11 +263,11 @@ img.image--hotel{
     margin-right: 20px;
 }
 p.star{
-    color: #0065FC;
+    color: var(--bleu);
 }
 i.fas.fa-info-circle{
     margin-right: 10px;
-    color: #0065FC;
+    color: var(--bleu);
     opacity: .5;
 }
 .list--pop{
@@ -353,7 +363,7 @@ img.image--activites.long,.activites--items.long {
 }
 .footer--conteneur{
     display: flex;
-    background-color: #f2f2f2f2;
+    background-color: var(--gris);
 }
 .footer--conteneur ul{
     list-style-type: none;
@@ -457,7 +467,7 @@ a.btn{
         
     }
     .nav--list{
-        border-bottom: 3px rgba(189, 183, 183, .5) solid;
+        border-bottom: 2px rgba(189, 183, 183, .4) solid;
     }
     .nav--list,a.nav--items {
         width: 100%;
@@ -479,7 +489,7 @@ a.btn{
         border-top: none;
        
 
-        border-bottom: 3px #0065FC solid;
+        border-bottom:var(--bordure);
 
     }
     .conteneur--txt{
@@ -512,8 +522,8 @@ a.btn{
     }
     .icon-mob:hover{
         background-color: #DEEBFF;
-        color: #0065FC;
-        border: 1px #0065FC solid;
+        color: var(--bleu);
+        border: var(--bordure);
     }
     .fas.fa-search{
         position: absolute;
