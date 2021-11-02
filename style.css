@@ -102,6 +102,25 @@ i.fas.fa-map-marker-alt.icon_map{
 .txt{
     font-weight: 200;
 }
+.txt span{
+    display: inline-block;
+    
+    
+   
+}
+.cercle{
+    position: relative;
+    font-size: x-large;
+    color: var(--gris);
+}
+.lettre{
+    position: absolute;
+    color: var(--bleu);
+    left: 10px;
+    bottom: 5px;
+    font-size: medium;
+}
+
 input.btn--search,input.btn--submit{
     height: inherit;
     border: 1px var(--bleu_clair) solid;
