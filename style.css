@@ -172,7 +172,7 @@ input.btn--submit:hover{
    
         color: var(--bleu);
        
-        background:var(--gris);
+        background:var(--bleu_clair);
 }
 .btn span{
     display: inline-block;
