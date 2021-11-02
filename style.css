@@ -45,7 +45,7 @@ nav.nav{
 
     
 }
-.nav--list li:visited{
+.nav--list li:hover{
     border-top: var(--bordure);
 }
 
