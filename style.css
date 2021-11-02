@@ -568,7 +568,7 @@ footer{
         display: inline-block;
         width: 60px;
         height: inherit;
-        border-radius: 0px 15px 15px 0px;
+        border-radius: 15px;
         position: relative;
     }
     .icon-mob:hover{
@@ -586,7 +586,7 @@ footer{
    
    
     .btn--filtre{
-        width: 100%;
+        width: 90%;
         flex-wrap: wrap;
         justify-content: flex-start;
         
@@ -610,12 +610,14 @@ footer{
     }
     article.list--hotel{
         background: #fff;
+     
     }
     .activites h2.txt--themes{
         margin-left: 15px;
     }
     .hotel--items{
         width: 90%;
+        box-shadow: 2px 0px 5px 2px rgba(182, 174, 174,0.5);
     }
     .hotel--list{
         flex-direction: column;
