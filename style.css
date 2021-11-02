@@ -132,6 +132,7 @@ input.btn--submit:hover{
     background-color: var(--bleu_clair);
     color: var(--bleu);
     font-weight: 700;
+    border: var(--bordure);
 }
 .btn--filtre{
     margin-top: 20px;
