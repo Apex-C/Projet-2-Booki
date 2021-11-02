@@ -400,9 +400,9 @@ img.image--activites.long,.activites--items.long {
     border-radius: 0px 0px 20px 20px;
 }
 .des.hotel--titre{
-    margin:10px 0px 10px 20px;
-    font-weight:600;
-    font-size: large;
+    margin:10px 0px 10px 15px;
+    font-weight:500;
+    font-size: 15px;
 
 }
 .footer--conteneur{
@@ -411,7 +411,7 @@ img.image--activites.long,.activites--items.long {
 }
 .footer--conteneur ul{
     list-style-type: none;
-    margin-right: 40px;
+    margin-right: 70px;
 }
 .footer--items:first-child{
     font-weight: 700;
