@@ -73,12 +73,15 @@ nav.nav{
  
     letter-spacing: 1px;
 }
+
 form.form{
     display: flex;
     align-items: center;
     height: 50px;
     margin-bottom: 20px;
     width: 40%;
+    border: 1px var(--bleu_clair) solid;
+    border-radius: 15px;
  
 }
 form span{
@@ -120,10 +123,11 @@ i.fas.fa-map-marker-alt.icon_map{
     bottom: 5px;
     font-size: medium;
 }
-
+input.btn--search{
+    border: none;
+}
 input.btn--search,input.btn--submit{
     height: inherit;
-    border: 1px var(--bleu_clair) solid;
     flex:3;
   
 }
@@ -134,6 +138,7 @@ input.btn--search{
     color: rgba(0, 0, 0, 0.7);
 }
 input.btn--submit{
+    border: 0px;
     color: white;
     background-color: var(--bleu);
     border-radius: 0px 15px 15px 0px;
@@ -560,7 +565,9 @@ footer{
     form.form{
         width: 100%;
         justify-content: center;
+      
     }
+   
     .btn--submit{
         display: none;
     }
@@ -568,7 +575,7 @@ footer{
         display: inline-block;
         width: 60px;
         height: inherit;
-        border-radius: 0px 15px 15px 0px;
+        border-radius: 15px;
         position: relative;
     }
     .icon-mob:hover{
@@ -584,7 +591,7 @@ footer{
     }
  
     .btn--filtre{
-        width: 85%;
+        width: 80%;
         flex-wrap: wrap;
         justify-content: space-between;
         
