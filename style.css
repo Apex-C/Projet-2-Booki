@@ -70,6 +70,9 @@ nav{
 .nav_activites_style{
     padding:20px 35px 20px 20px;
 }
+.haut{
+    margin-bottom: var(--marge_section);
+}
 .conteneur--txt{
    letter-spacing: 1px;
    margin-bottom: 15px;
@@ -217,7 +220,7 @@ strong{
     letter-spacing: 1px;
     font-weight: 200;
     font-size: 15px;
-    margin-bottom: var(--marge_section);   
+  
 }
 .cercle{
     font-size: x-large;
@@ -439,11 +442,12 @@ li.footer--items{
     }
     .haut{
         width: 95%;
-        margin:auto;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 10px;
     }
     .form{
-        width: 100%;
+        width: 70%;
   
     }
     .btn--search{
@@ -451,7 +455,7 @@ li.footer--items{
     }
     .btn--filtre{
         width: 100%;
-        font-size: small;
+      
     }
     .btn--filtre p{
         font-size: medium;
