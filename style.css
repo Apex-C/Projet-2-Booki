@@ -19,15 +19,17 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
     --ombre_4:0px 2px 8px 8px rgba(0,0,0,0.35);
     --cacher:none;
     --marge_section:30px;
-    --arondi_gauche_20:20px 0px 0px 20px;
-    --arondi_gauche_15:15px 0px 0px 15px;
-    --arondi_droit_20:0px 20px 20px 0px;
-    --arondi_droit_15:0px 14px 14px 0px;
+    --arrondi_gauche_20:20px 0px 0px 20px;
+    --arrondi_gauche_15:15px 0px 0px 15px;
+    --arrondi_droit_20:0px 20px 20px 0px;
+    --arrondi_droit_15:0px 14px 14px 0px;
     --arrondi_bas_20:0px 0px 17px 17px;
     --arrondi_bas_15:0px 0px 15px 15px;
     --arrondi_haut_20:17px 17px 0px 0px;
     --arrondi_haut_15:15px 15px 0px 0px;   
 }
+
+/*style*/
 body{
     background: #fff;
 }
@@ -106,7 +108,7 @@ nav{
     background: var(--bleu);
     color: #fff;
     font-weight: 700;
-    border-radius: var(--arondi_droit_15);
+    border-radius: var(--arrondi_droit_15);
     border: var(--cacher);
     letter-spacing: 1px;
     padding: 5px;
@@ -120,7 +122,7 @@ nav{
     width: 50px;
     position: relative;
     background: var(--gris);
-    border-radius: var(--arondi_gauche_15);
+    border-radius: var(--arrondi_gauche_15);
 }
 .icon_map{
     position: absolute;
@@ -158,6 +160,7 @@ strong{
     letter-spacing: .5px;
 }
 .btn{
+    font-size: 15px;
     display: flex;
     justify-content: space-between;
     border: var(--bordure_2) var(--bleu_clair);
@@ -193,22 +196,25 @@ strong{
 .btn:hover {
     color: var(--bleu);
     border: var(--bordure_2) var(--bleu);
+  
   }
   .btn:hover:before {
     width: 100%;
   }
+ 
 .btn span{  
     width: 40px;
     height: inherit;
     border-radius: 25px;
-    margin-right: 5px;
     background: var(--bleu_clair);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--bleu);
+   
 }
 .icon{
-    color: var(--bleu);
+  
     background: var(--bleu_clair);
 }
 .btn strong{
@@ -259,7 +265,7 @@ strong{
 .hotel--pop img{
     width: 100%;
     height: 110px;
-    border-radius: var(--arondi_gauche_15);
+    border-radius: var(--arrondi_gauche_15);
 }
 .hotel--pop{
     width: 90%;
@@ -281,7 +287,7 @@ strong{
     background: #fff;
     height: 100%;
     width: 59%;
-    border-radius: var(--arondi_droit_15);
+    border-radius: var(--arrondi_droit_15);
     padding: 15px;
 }
 h2.txt--themes,i.fas.fa-chart-line,p.txt--themes{
@@ -475,6 +481,11 @@ li.footer--items{
     .hotel--items{
         width: 45%;
         margin-bottom: 20px;
+        height: 200px;
+    }
+    .hotel--items .box_image{
+        height: 135px;
+        width: 100%;
     }
     .fas.fa-chart-line{
         display: none;
@@ -490,6 +501,10 @@ li.footer--items{
         height: 85px;
         width: 100%;
         border-radius: var(--arrondi_bas_20);
+        padding-top: 5px;
+    }
+    .star.star--pop{
+        bottom: 0;
     }
     .hotel--pop img{
         border-radius: var(--arrondi_haut_20);
@@ -590,10 +605,14 @@ li.footer--items{
    }
    .hotel--items{
        width: 90%;
-       margin-bottom: 15px;
+       margin-bottom: 30px;
        box-shadow: var(--ombre_3);
        border-radius: 20px;
        height: 220px;
+   }
+   p.txt--themes{
+       margin-top: 0px;
+       margin-bottom: 10px;
    }
    .hotel--pop .box_image{
        width: 180px;
